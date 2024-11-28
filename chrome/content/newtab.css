@@ -1,0 +1,36 @@
+@-moz-document url("about:newtab"), url("about:home") {
+	.top-site-outer {
+		--foxkit-tile-radius: 12px;
+		--foxkit-tile-icon-size: 32px;
+		--foxkit-tile-size: 56px;
+		border-radius: 16px !important;
+
+		& .tile {
+			border-radius: var(--foxkit-tile-radius) !important;
+			height: var(--foxkit-tile-size) !important;
+			width: var(--foxkit-tile-size) !important;
+
+			& .icon-wrapper {
+				width: var(--foxkit-tile-icon-size) !important;
+				height: var(--foxkit-tile-icon-size) !important;
+			}
+
+			& .icon-wrapper.letter-fallback::before {
+				font-size: 32px !important;
+				top: 0 !important;
+			}
+		}
+
+		& .context-menu-button {
+			--foxkit-tile-btn-size: 24px;
+
+			background-color: var(--newtab-element-hover-color) !important;
+			padding: 1.5ch !important;
+			height: var(--foxkit-tile-btn-size) !important;
+			width: var(--foxkit-tile-btn-size) !important;
+			border-radius: 8px !important;
+			right: 0 !important;
+			top: -12px !important;
+		}
+	}
+}
