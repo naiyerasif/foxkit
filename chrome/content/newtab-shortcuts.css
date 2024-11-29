@@ -1,4 +1,6 @@
-@-moz-document url("about:newtab"), url("about:home") {
+@-moz-document url-prefix("about:newtab"), 
+url-prefix("about:home"), 
+url-prefix("about:firefoxview") {
 	.top-site-outer {
 		--foxkit-tile-radius: 12px;
 		--foxkit-tile-icon-size: 32px;
@@ -13,11 +15,11 @@
 			& .icon-wrapper {
 				width: var(--foxkit-tile-icon-size) !important;
 				height: var(--foxkit-tile-icon-size) !important;
-			}
 
-			& .icon-wrapper.letter-fallback::before {
-				font-size: 32px !important;
-				top: 0 !important;
+				&.letter-fallback::before {
+					font-size: 32px !important;
+					top: 0 !important;
+				}
 			}
 		}
 
