@@ -1,0 +1,8 @@
+.tools-and-extensions[orientation="vertical"] {
+
+	/* hide extensions from showing up in the bottom menu */
+	& moz-button[extension] {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
