@@ -1,0 +1,4 @@
+#sidebar-main {
+	/* match the background color with tab bar */
+	background-color: var(--toolbox-non-lwt-bgcolor-inactive) !important;
+}
