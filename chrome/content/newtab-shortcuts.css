@@ -1,6 +1,10 @@
 @-moz-document url-prefix("about:newtab"), 
 url-prefix("about:home"), 
 url-prefix("about:firefoxview") {
+	.top-sites-list {
+		row-gap: 0 !important;
+	}
+
 	.top-site-outer {
 		--foxkit-tile-radius: 12px;
 		--foxkit-tile-icon-size: 32px;
